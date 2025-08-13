@@ -5,10 +5,9 @@ body {
   font-family: TS-Reg, sans-serif;
 }
 header {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   height: 60px;
   width: 100%;
-  margin: 0 25px 0 0;
 }
 
 header img {
@@ -20,13 +19,111 @@ header .container {
   justify-content: space-between;
   height: 100%;
   align-items: center;
-  border: 2px solid salmon;
 }
 .container {
-  max-width: 1024px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 }
 header nav {
   display: flex;
+  justify-content: space-between;
+}
+
+header nav a {
+  padding: 10px 10px;
+  margin: 0 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+header nav a:hover {
+  background-color: #f2f2f2;
+}
+header button {
+  border-radius: 20px;
+  border: 0;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "TS-Med";
+  margin: 0px 0px 0px 5px;
+  padding: 0 10px;
+}
+button:hover {
+  background-color: #4c4c4c;
+}
+
+h1 {
+  font-family: "TS-Med";
+  font-size: 54px;
+  letter-spacing: 1.1px;
+  padding-top: 20px;
+  line-height: 70px;
+}
+
+h1 > span {
+  color: #fe5d5d;
+}
+
+main p {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #333;
+}
+
+main p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+main nav a {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border: 1px solid black;
+  padding: 12px 15px;
+  border-radius: 14px;
+  flex: 1;
+}
+
+main nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+main section {
+  display: flex;
+  margin-top: 30px;
+  gap: 2px;
+  height: 430px;
+}
+
+main section img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.left {
+  flex: 1;
+}
+
+.rigth {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2px;
+  height: calc(50% - 1px);
+}
+
+.localisation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
