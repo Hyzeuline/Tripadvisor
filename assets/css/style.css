@@ -211,28 +211,41 @@ main section img {
 .Restaurants {
   display: flex;
   justify-content: space-between;
+  padding: 0px 30px 0px 0px;
 }
 
 .intro {
-  width: 30%;
+  width: 20%;
+}
+
+.intro h4 {
+  font-size: 24px;
 }
 .intro p {
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 20px 0;
+}
+.intro a {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .Attractions-photos,
 .Restaurants-photos {
   display: flex;
-  width: 60%;
+  width: 70%;
   overflow: scroll;
   gap: 10px;
+  cursor: pointer;
 }
 
 .Attractions-photos a,
 .Restaurants-photos a {
-  position: relative;
   width: calc((100% - 20px) / 3);
   flex-shrink: 0;
+  position: relative;
 }
 
 .Attractions-photos img,
@@ -241,7 +254,9 @@ main section img {
   width: 100%;
 }
 
-.Attractions-photos a i {
+.Attractions-photos a i,
+.Restaurants-photos a i {
   position: absolute;
   right: 10px;
+  bottom: 150px;
 }
