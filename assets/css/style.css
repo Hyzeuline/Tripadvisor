@@ -141,15 +141,18 @@ main section img {
 
 .Paris {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .Paris article {
-  padding: 20px;
+  width: 50%;
 }
 
 .Paris article h2 {
   font-size: 28px;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 .Paris article p {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -159,6 +162,8 @@ main section img {
 }
 .map {
   font-family: var(--TS-med);
+  width: 40%;
+  border-radius: 16px;
 }
 .map h3 {
   font-size: 32px;
@@ -189,4 +194,33 @@ main section img {
 }
 .map button:hover {
   background-color: #4c4c4c;
+}
+.map img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 0 16px 16px;
+}
+
+.Details h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0px 0px 30px;
+}
+
+.Attractions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro {
+  width: 30%;
+}
+.intro p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.Attractions-photos {
+  display: flex;
+  width: 60%;
+  overflow: scroll;
 }
