@@ -40,14 +40,14 @@ header nav {
   justify-content: space-between;
 }
 
-header nav a {
+nav a {
   padding: 10px 10px;
   margin: 0 10px;
   border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
 }
-header nav a:hover {
+nav a:hover {
   background-color: #f2f2f2;
 }
 header button {
@@ -88,12 +88,11 @@ main p span {
   cursor: pointer;
 }
 
-main nav {
+main nav .navigation {
   display: flex;
-  padding-bottom: 26px;
   gap: 10px;
 }
-main nav a {
+.navigation > div {
   display: flex;
   justify-content: space-between;
   width: calc((100% - 50px) / 6);
@@ -102,13 +101,14 @@ main nav a {
   padding: 12px 15px;
   border-radius: 14px;
   flex: 1;
+  cursor: pointer;
 }
 
-main nav .croisière {
+.navigation .croisière {
   display: none;
 }
 
-main nav a:hover {
+.navigation div:hover {
   background-color: black;
   color: white;
 }
