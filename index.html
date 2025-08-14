@@ -16,13 +16,17 @@
   <body>
     <header>
       <section class="container">
+        <a class="hidden-icon"><i class="fa-solid fa-bars"></i></a>
         <img src="./assets/img/Tripadvisor-Logo.png" alt="tripadvisor-logo" />
         <nav>
-          <a><i class="fa-solid fa-pencil"></i><span> Avis</span></a>
-          <a><i class="fa-regular fa-bell"></i><span> Alertes</span></a>
-          <a><i class="fa-regular fa-heart"></i><span> Favoris</span></a>
-          <button>Connectez-vous</button>
+          <a class="present-icon"><i class="fa-solid fa-pencil"></i><span> Avis</span></a>
+          <a class="present-icon"><i class="fa-regular fa-bell"></i><span> Alertes</span></a>
+          <a class="present-icon"><i class="fa-regular fa-heart"></i><span> Favoris</span></a>
+          <button class="present-icon">Connectez-vous</button>
+          <div>
+          <a class="hidden-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
           <a><i class="fa-solid fa-cart-shopping"></i><span> Panier</span></a>
+          </div>
         </nav>
       </section>
     </header>
@@ -52,15 +56,15 @@
           <div>
             <span>Forums de voyage</span> <i class="fa-regular fa-message"></i>
           </div>
-          <div>
+          <div class="hidden-nav">
             <span>Vols</span>
             <i class="fa-solid fa-plane"></i>
           </div>
-          <div class="croisière">
-            <span>Croisières</span>
-            <i class="fa-solid fa-sailboat"></i>
-          </div>
-          <div>
+          <div class="hidden-nav">
+          <span>Croisières</span>
+          <i class="fa-solid fa-sailboat"></i>
+        </div>
+        <div>
           <span>Plus</span>
           <i class="fa-solid fa-ellipsis"></i>
         </div>
@@ -190,6 +194,7 @@
           </div>
         </div>
       </div>
+      <h2>Guides des voyageurs</h2>
       <div class="guides">
         <article class="article">
           <img src="./assets/img/visit1.jpg" alt="thingstodo" />

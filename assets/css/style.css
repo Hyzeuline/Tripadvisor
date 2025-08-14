@@ -40,6 +40,10 @@ header nav {
   justify-content: space-between;
 }
 
+.hidden-icon {
+  display: none;
+}
+
 nav a {
   padding: 10px 10px;
   margin: 0 10px;
@@ -95,16 +99,16 @@ main nav .navigation {
 .navigation > div {
   display: flex;
   justify-content: space-between;
-  width: calc((100% - 50px) / 6);
   gap: 20px;
   border: 1px solid black;
   padding: 12px 15px;
   border-radius: 14px;
-  flex: 1;
+  /* flex: 1; */
+  width: calc((100% - 50px) / 6);
   cursor: pointer;
 }
 
-.navigation .croisière {
+.navigation .hidden-nav {
   display: none;
 }
 
@@ -157,7 +161,7 @@ main section img {
   width: 50%;
 }
 
-.Paris article h2 {
+h2 {
   font-size: 28px;
   margin-bottom: 30px;
   font-weight: bold;
@@ -199,6 +203,8 @@ main section img {
   font-family: "TS-Med";
   margin: 0px 0px 0px 5px;
   padding: 10px 10px;
+  height: 54px;
+  width: 154px;
 }
 .map button:hover {
   background-color: #4c4c4c;
@@ -332,8 +338,106 @@ footer img {
   width: 40px;
 }
 
+@media (max-width: 1184px) {
+  .navigation .hidden-nav {
+    display: inherit;
+  }
+  .navigation {
+    flex-wrap: wrap;
+  }
+  .navigation > div {
+    width: calc((100% - 30px) / 4);
+  }
+}
+
 @media (max-width: 1024px) {
   header nav a span {
+    display: none;
+  }
+  .Paris {
+    flex-wrap: wrap;
+  }
+  .Paris article {
+    width: 100%;
+    font-size: 16px;
+  }
+  .map {
+    width: 100%;
+    display: flex;
+  }
+  .map > div {
+    width: 50%;
+    border-radius: 16px 0px 0px 16px;
+  }
+  .map img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 0 16px 16px 0px;
+  }
+  .Attractions-photos a,
+  .Restaurants-photos a {
+    width: calc((100% - 20px) / 2.5);
+  }
+  .guides {
+    overflow: scroll;
+  }
+  .article {
+    width: calc((100% - 20px) / 2.5);
+    flex-shrink: 0;
+  }
+  .article::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .present-icon {
+    display: none;
+  }
+
+  .container .hidden-icon {
+    display: inherit;
+  }
+  .container nav > div {
+    display: flex;
+  }
+  nav a {
+    padding: 0;
+  }
+  .container .navigation {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  .container .navigation::-webkit-scrollbar {
+    display: none;
+  }
+  .photos .rigth {
+    display: none;
+  }
+  .map {
+    flex-direction: column;
+  }
+  .map > div {
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+  }
+  .map img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0px 0px 16px 16px;
+  }
+  .Attractions,
+  .Restaurants {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Attractions-photos a,
+  .Restaurants-photos a,
+  .article {
+    width: calc((100% - 20px) / 1.5);
+  }
+  .article::-webkit-scrollbar {
     display: none;
   }
 }
